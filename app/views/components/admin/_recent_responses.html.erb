@@ -24,7 +24,7 @@
             <%= link_to form.organization.name, admin_organization_path(form.organization) %>
           </td>
           <td>
-            <%= link_to form.name, admin_form_path(form) %>
+            <%= link_to form.name, admin_form_path(form), class: "usa-link" %>
           </td>
           <td>
             <%= form.submissions.where("created_at > ?", Time.now - days_since.days).count %>
@@ -40,15 +40,15 @@
   <% end %>
   <p>
     See the last:
-    <a href="?recent=7">
+    <a href="?recent=7" class="usa-link">
       7 days
     </a>
     &middot;
-    <a href="?recent=14">
+    <a href="?recent=14" class="usa-link">
       14 days
     </a>
     &middot;
-    <a href="?recent=30">
+    <a href="?recent=30" class="usa-link">
       30 days
     </a>
   </p>

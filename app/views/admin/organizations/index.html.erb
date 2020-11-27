@@ -13,9 +13,9 @@
     <% @organizations.each do |organization| %>
       <tr>
         <td><%= organization.abbreviation %></td>
-        <td><%= link_to organization.name, admin_organization_path(organization) %></td>
+        <td><%= link_to organization.name, admin_organization_path(organization), class: "usa-link" %></td>
         <td>
-          <%= link_to organization.url, organization.url, target: "_blank", rel: "noopener" %>
+          <%= link_to organization.url, organization.url, class: "usa-link", target: "_blank", rel: "noopener" %>
         </td>
       </tr>
     <% end %>

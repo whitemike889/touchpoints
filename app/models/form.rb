@@ -151,6 +151,14 @@ class Form < ApplicationRecord
     self.aasm.states
   end
 
+  def friendly_aasm_state
+    {
+      "in_development" => "DRAFT",
+      "live" => "PUBLISHED",
+      "archived" => "ARCHIVED"
+    }[aasm_state]
+  end
+
 
   def duplicate!(user:)
     new_form = self.dup
