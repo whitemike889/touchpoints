@@ -2,13 +2,13 @@
   Editing User
 <% end %>
 <p>
-  <%= link_to admin_user_path(@user) do %>
+  <%= link_to admin_user_path(@user), class: "usa-link" do %>
     <i class="fa fa-arrow-circle-left"></i>
     Back to User
   <% end %>
 </p>
 <div class="well">
-  Email: <%= link_to @user.email, admin_user_path %>
+  Email: <%= link_to @user.email, admin_user_path, class: "usa-link" %>
   <br>
   <%= render 'form', user: @user %>
 </div>
