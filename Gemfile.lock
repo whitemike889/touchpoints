@@ -252,6 +252,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
+      racc (~> 1.4)
     oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
       jwt (>= 1.0, < 3.0)
@@ -274,7 +276,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.6)
-    puma (5.5.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -409,6 +411,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   aasm (~> 5.2.0)
@@ -437,7 +440,7 @@ DEPENDENCIES
   omniauth_login_dot_gov!
   pg (~> 1.1)
   pry
-  puma (~> 5.0)
+  puma (~> 5.6)
   rack-cors (>= 1.1.1)
   rails (>= 6.1.4.1)
   rails-controller-testing (>= 1.0.5)
